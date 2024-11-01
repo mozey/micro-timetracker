@@ -1,5 +1,7 @@
 VERSION = "0.1.0"
 
+-- See definition of import function
+-- https://github.com/zyedidia/micro/blob/master/cmd/micro/initlua.go#L22
 local micro = import("micro")
 local config = import("micro/config")
 local buffer = import("micro/buffer")
@@ -224,3 +226,7 @@ local buffer = import("micro/buffer")
 
 --     config.AddRuntimeFile("manipulator", config.RTHelp, "help/manipulator.md")
 -- end
+
+function init()
+  -- TODO Function to insert current date at cursor position
+end
